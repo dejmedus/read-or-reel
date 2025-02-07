@@ -1,13 +1,18 @@
 import {
   Links,
   Meta,
+  MetaFunction,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+
 import "./tailwind.css";
+import { CatalogProvider } from "./hooks/useCatalog";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -22,21 +27,35 @@ export const links: LinksFunction = () => [
   },
 ];
 
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Read or Reel" },
+    {
+      name: "description",
+      content: "Was the book or the movie better? (spoiler: the book)",
+    },
+  ];
+};
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
+    <CatalogProvider>
+      <html lang="en">
+        <head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <Meta />
+          <Links />
+        </head>
+        <body>
+          <Navbar />
+          {children}
+          <Footer />
+          <ScrollRestoration />
+          <Scripts />
+        </body>
+      </html>
+    </CatalogProvider>
   );
 }
 
