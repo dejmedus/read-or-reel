@@ -16,6 +16,7 @@ export interface IBook {
   description: string;
   goodreadsRating: number;
   yearPublished: string;
+  pageCount: string;
   genre: string[];
   imageUrl: string;
 }
@@ -27,6 +28,6 @@ export interface ICatalog {
 
 export interface CatalogContextType {
   catalog: ICatalog;
-  getBook: (bookName: string) => IBook;
-  getMovie: (movieName: string) => IMovie;
+  getBook: (bookId: number) => IBook;
+  getMovie: (movieId: number) => IMovie;
 }
