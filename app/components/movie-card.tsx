@@ -26,7 +26,7 @@ export default function MovieCard({ movieData }: { movieData: IMovie }) {
   );
 
   return (
-    <Link className="hover:font-bold underline" to={`/movies/${title}`}>
+    <Link className="hover:font-bold underline" to={`/movies/${id}`}>
       <div>this is a card for {title} movie</div>
     </Link>
   );

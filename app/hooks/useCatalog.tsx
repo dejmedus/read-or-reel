@@ -21,13 +21,13 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
     // parse it into a JS object
     // set catalog
     setCatalog(mockData);
-  });
+  }, []);
 
-  const getBook = (bookName: string) =>
-    catalog.books.filter((book) => book.title == bookName)[0];
+  const getBook = (bookId: number) =>
+    catalog.books.filter((book) => book.id == bookId)[0];
 
-  const getMovie = (movieName: string) =>
-    catalog.movies.filter((movie) => movie.title == movieName)[0];
+  const getMovie = (movieId: number) =>
+    catalog.movies.filter((movie) => movie.id == movieId)[0];
 
   return (
     <CatalogContext.Provider value={{ catalog, getBook, getMovie }}>

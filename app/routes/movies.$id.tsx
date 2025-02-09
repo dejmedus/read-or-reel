@@ -4,14 +4,14 @@ import { useLoaderData } from "@remix-run/react";
 import useCatalog from "../hooks/useCatalog";
 
 export async function loader({ params }: LoaderFunctionArgs) {
-  return { name: params.name };
+  return { id: Number(params.id) };
 }
 
 export default function Movie() {
-  const { name } = useLoaderData<typeof loader>();
+  const { id } = useLoaderData<typeof loader>();
   const { getMovie } = useCatalog();
 
-  if (!name) {
+  if (!id) {
     return (
       <div>
         <h2>Oops this movie is missing!</h2>
@@ -19,7 +19,7 @@ export default function Movie() {
     );
   }
 
-  const movie = getMovie(name);
+  const movie = getMovie(id);
   // movie will look like:
   //   "id": 1,
   //   "title": "movie name",

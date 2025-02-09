@@ -25,7 +25,7 @@ export default function BookCard({ bookData }: { bookData: IBook }) {
   );
 
   return (
-    <Link className="hover:font-bold underline" to={`/books/${title}`}>
+    <Link className="hover:font-bold underline" to={`/books/${id}`}>
       <div>this is a card for {title} book</div>
     </Link>
   );

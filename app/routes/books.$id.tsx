@@ -4,14 +4,14 @@ import { useLoaderData } from "@remix-run/react";
 import useCatalog from "../hooks/useCatalog";
 
 export async function loader({ params }: LoaderFunctionArgs) {
-  return { name: params.name };
+  return { id: Number(params.id) };
 }
 
 export default function Book() {
-  const { name } = useLoaderData<typeof loader>();
+  const { id } = useLoaderData<typeof loader>();
   const { getBook } = useCatalog();
 
-  if (!name) {
+  if (!id) {
     return (
       <div>
         <h2>Oops this book is missing!</h2>
@@ -19,7 +19,7 @@ export default function Book() {
     );
   }
 
-  const book = getBook(name);
+  const book = getBook(id);
   // book will look like:
   // "id": 1,
   // "title": "book name",
