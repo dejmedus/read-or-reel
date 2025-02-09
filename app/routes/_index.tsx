@@ -1,4 +1,3 @@
-// import type { MetaFunction } from "@remix-run/node";
 import CatalogLinkCard from "~/components/catalog-link-card";
 import FAQ from "~/components/faqs";
 
