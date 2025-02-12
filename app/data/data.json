@@ -1,14 +1,54 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "movie name",
-      "director": "",
-      "description": "",
-      "imdbRating": 5.0,
-      "yearReleased": "",
-      "genre": [],
-      "imageUrl": ""
+      "id": 6,
+      "title": "The Last Unicorn",
+      "director": "Jules Bass, Arthur Rankin Jr.",
+      "description": "A beautiful unicorn sets out to learn if she truly is the last of her kind in this sparkling animated musical.",
+      "imdbRating": 7.3,
+      "yearReleased": "1982",
+      "genre": ["fantasy"],
+      "imageUrl": "/assets/images/the_last_unicorn_movie.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Ender's Game",
+      "director": "Gavin Hood",
+      "description": "Young Ender Wiggin is recruited by the International Military to lead the fight against the Formics, an insectoid alien race who had previously tried to invade Earth and had inflicted heavy losses on humankind.",
+      "imdbRating": 6.6,
+      "yearReleased": "2013",
+      "genre": ["science-fiction"],
+      "imageUrl": "/assets/images/enders_game_movie.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "The Fellowship of the Ring",
+      "director": "Peter Jackson",
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "imdbRating": 8.9,
+      "yearReleased": "2001",
+      "genre": ["fantasy"],
+      "imageUrl": "/assets/images/the_fellowship_of_the_ring_movie.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "The Hunger Games",
+      "director": "Gary Ross",
+      "description": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+      "imdbRating": 7.2,
+      "yearReleased": "2012",
+      "genre": ["Dystopian Sci-Fi"],
+      "imageUrl": "/assets/images/the_hunger_games_movie.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Twilight",
+      "director": "Catherine Hardwicke",
+      "description": "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire.",
+      "imdbRating": 5.3,
+      "yearReleased": "2008",
+      "genre": ["fantasy"],
+      "imageUrl": "/assets/images/twighlight_movie.jpeg"
     }
   ],
   "books": [
@@ -21,7 +61,7 @@
       "yearPublished": "1968",
       "pageCount": "288",
       "genre": ["fantasy"],
-      "imageUrl": "public/assets/images/the_last_unicorn_book.jpg"
+      "imageUrl": "/assets/images/the_last_unicorn_book.jpg"
     },
     {
       "id": 2,
@@ -32,7 +72,7 @@
       "yearPublished": "1985",
       "pageCount": "324",
       "genre": ["science-fiction"],
-      "imageUrl": "public/assets/images/enders_game_book.jpeg"
+      "imageUrl": "/assets/images/enders_game_book.jpeg"
     },
     {
       "id": 3,
@@ -43,7 +83,7 @@
       "yearPublished": "1954",
       "pageCount": "464",
       "genre": ["fantasy"],
-      "imageUrl": "public/assets/images/the_fellowship_of_the_ring_book.jpeg"
+      "imageUrl": "/assets/images/the_fellowship_of_the_ring_book.jpeg"
     },
     {
       "id": 4,
@@ -54,7 +94,7 @@
       "yearPublished": "2008",
       "pageCount": "374",
       "genre": ["science-fiction", "dystopian", "young-adult"],
-      "imageUrl": "public/assets/images/the_hunger_games_book.jpg"
+      "imageUrl": "/assets/images/the_hunger_games_book.jpg"
     },
     {
       "id": 5,
@@ -65,18 +105,8 @@
       "yearPublished": "2005",
       "pageCount": "544",
       "genre": ["fantasy", "young-adult", "romance"],
-      "imageUrl": "public/assets/images/twilight_book.jpg"
-    },
-    {
-      "id": 1,
-      "title": "book name",
-      "author": "",
-      "description": "",
-      "goodreadsRating": 5.0,
-      "yearPublished": "",
-      "pageCount": "",
-      "genre": [],
-      "imageUrl": ""
+      "imageUrl": "/assets/images/twilight_book.jpg"
     }
+
   ]
 }
