@@ -21,7 +21,7 @@
       "yearPublished": "1968",
       "pageCount": "288",
       "genre": ["fantasy"],
-      "imageUrl": "public/assets/images/the_last_unicorn_book.jpg"
+      "imageUrl": "/assets/images/the_last_unicorn_book.jpg"
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
       "yearPublished": "1985",
       "pageCount": "324",
       "genre": ["science-fiction"],
-      "imageUrl": "public/assets/images/enders_game_book.jpeg"
+      "imageUrl": "/assets/images/enders_game_book.jpeg"
     },
     {
       "id": 3,
@@ -43,7 +43,7 @@
       "yearPublished": "1954",
       "pageCount": "464",
       "genre": ["fantasy"],
-      "imageUrl": "public/assets/images/the_fellowship_of_the_ring_book.jpeg"
+      "imageUrl": "/assets/images/the_fellowship_of_the_ring_book.jpeg"
     },
     {
       "id": 4,
@@ -54,7 +54,7 @@
       "yearPublished": "2008",
       "pageCount": "374",
       "genre": ["science-fiction", "dystopian", "young-adult"],
-      "imageUrl": "public/assets/images/the_hunger_games_book.jpg"
+      "imageUrl": "/assets/images/the_hunger_games_book.jpg"
     },
     {
       "id": 5,
@@ -65,18 +65,7 @@
       "yearPublished": "2005",
       "pageCount": "544",
       "genre": ["fantasy", "young-adult", "romance"],
-      "imageUrl": "public/assets/images/twilight_book.jpg"
-    },
-    {
-      "id": 1,
-      "title": "book name",
-      "author": "",
-      "description": "",
-      "goodreadsRating": 5.0,
-      "yearPublished": "",
-      "pageCount": "",
-      "genre": [],
-      "imageUrl": ""
+      "imageUrl": "/assets/images/twilight_book.jpg"
     }
   ]
 }
