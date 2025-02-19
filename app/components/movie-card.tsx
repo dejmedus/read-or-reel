@@ -2,35 +2,29 @@ import { Link } from "@remix-run/react";
 
 import { IMovie } from "../data/types";
 
-export default function MovieCard({ movieData }: { movieData: IMovie }) {
+export default function MovieCard({
+  movieData,
+  movieId,
+}: {
+  movieData: IMovie;
+  movieId: number;
+}) {
   const {
-    id,
     title,
-    director,
-    description,
-    imdbRating,
-    yearReleased,
-    genre,
+    // director,
+    // description,
+    // imdbRating,
+    // yearReleased,
+    // genre,
     imageUrl,
   } = movieData;
 
-  console.log(
-    id,
-    title,
-    director,
-    description,
-    imdbRating,
-    yearReleased,
-    genre,
-    imageUrl
-  );
-
   return (
-    <Link to={`/movies/${id}`} className="block">
+    <Link to={`/movies/${movieId}`} className="block">
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <img 
-          src={imageUrl} 
-          alt={`Movie poster for ${title}`} 
+        <img
+          src={imageUrl}
+          alt={`Movie poster for ${title}`}
           className="w-full h-64 object-cover"
         />
         <div className="px-4 py-2">
@@ -39,6 +33,4 @@ export default function MovieCard({ movieData }: { movieData: IMovie }) {
       </div>
     </Link>
   );
-
-
 }

@@ -1,5 +1,4 @@
 export interface IMovie {
-  id: number;
   title: string;
   director: string;
   description: string;
@@ -10,7 +9,6 @@ export interface IMovie {
 }
 
 export interface IBook {
-  id: number;
   title: string;
   author: string;
   description: string;
@@ -21,13 +19,17 @@ export interface IBook {
   imageUrl: string;
 }
 
-export interface ICatalog {
-  movies: IMovie[];
-  books: IBook[];
+export interface IPair {
+  id: number;
+  movie: IMovie;
+  book: IBook;
 }
+
+export type ICatalog = IPair[];
 
 export interface CatalogContextType {
   catalog: ICatalog;
   getBook: (bookId: number) => IBook;
   getMovie: (movieId: number) => IMovie;
+  setSearch: (search: string) => void;
 }
