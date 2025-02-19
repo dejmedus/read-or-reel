@@ -26,8 +26,19 @@ export default function MovieCard({ movieData }: { movieData: IMovie }) {
   );
 
   return (
-    <Link className="hover:font-bold underline" to={`/movies/${id}`}>
-      <div>this is a card for {title} movie</div>
+    <Link to={`/movies/${id}`} className="block">
+      <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <img 
+          src={imageUrl} 
+          alt={`Movie poster for ${title}`} 
+          className="w-full h-64 object-cover"
+        />
+        <div className="px-4 py-2">
+          <h2 className="font-bold text-xl">{title}</h2>
+        </div>
+      </div>
     </Link>
   );
+
+
 }
