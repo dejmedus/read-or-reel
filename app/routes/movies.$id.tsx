@@ -9,7 +9,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
 
 export default function Movie() {
   const { id } = useLoaderData<typeof loader>();
-  const { getMovie } = useCatalog();
+  const { getPair } = useCatalog();
 
   if (!id) {
     return (
@@ -19,7 +19,7 @@ export default function Movie() {
     );
   }
 
-  const movie = getMovie(id);
+  const { movie } = getPair(id);
   // movie will look like:
   //   "id": 1,
   //   "title": "movie name",

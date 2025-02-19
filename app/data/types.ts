@@ -29,7 +29,6 @@ export type ICatalog = IPair[];
 
 export interface CatalogContextType {
   catalog: ICatalog;
-  getBook: (bookId: number) => IBook;
-  getMovie: (movieId: number) => IMovie;
+  getPair: (bookId: number) => IPair;
   setSearch: (search: string) => void;
 }

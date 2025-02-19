@@ -9,7 +9,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
 
 export default function Book() {
   const { id } = useLoaderData<typeof loader>();
-  const { getBook } = useCatalog();
+  const { getPair } = useCatalog();
 
   if (!id) {
     return (
@@ -19,7 +19,7 @@ export default function Book() {
     );
   }
 
-  const book = getBook(id);
+  const { book } = getPair(id);
   // book will look like:
   // "id": 1,
   // "title": "book name",
