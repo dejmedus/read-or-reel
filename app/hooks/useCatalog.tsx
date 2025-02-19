@@ -1,40 +1,51 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { CatalogContextType, ICatalog, IBook, IMovie } from "../data/types";
-import databaseJSON from "../data/data.json"
+import { CatalogContextType, ICatalog, IPair } from "../data/types";
+import filterCatalog from "~/utils/filterCatalog";
+import databaseJSON from "../data/data.json";
 
 // Context is like a storage locker where we store data we want multiple components to access
 // provides the shape of the context and default values. CatalogContext will actually fill
 // the context with the data
 const defaultContext: CatalogContextType = {
-  catalog: {
-    books: [],
-    movies: [],
-  },
-// placeholder funtions to show the context what type of data to expect 
-  getBook: () => ({} as IBook),
-  getMovie: () => ({} as IMovie),
+  catalog: databaseJSON,
+  // placeholder funtions to show the context what type of data to expect
+  getPair: () => ({} as IPair),
+  setSearch: () => {},
 };
 
 const CatalogContext = createContext<CatalogContextType>(defaultContext);
 
 // Provider component is a wrapper, makes catalog data vailable to all child components
 export function CatalogProvider({ children }: { children: React.ReactNode }) {
-// state variable and state management
+  // state variable and state management
   const [catalog, setCatalog] = useState<ICatalog>(defaultContext.catalog);
+  const [search, setSearch] = useState<string>("");
 
-// runs when the component mounts, runs only once, loads date fr JSON
+  // runs when the component mounts, runs only once, loads date fr JSON
   useEffect(() => {
     setCatalog(databaseJSON);
   }, []);
-// utility functions available to any component using the context
-  const getBook = (bookId: number) =>
-    catalog.books.filter((book) => book.id == bookId)[0];
 
-  const getMovie = (movieId: number) =>
-    catalog.movies.filter((movie) => movie.id == movieId)[0];
+  useEffect(() => {
+    if (search === "") {
+      setCatalog(databaseJSON);
+      return;
+    }
+
+    const filteredCatalog = filterCatalog(databaseJSON, search);
+
+    filteredCatalog.length === 0
+      ? setCatalog(databaseJSON)
+      : setCatalog(filteredCatalog);
+  }, [search]);
+
+  // utility functions available to any component using the context
+  const getPair = (id: number) => {
+    return catalog.find((pair) => pair.id === id);
+  };
 
   return (
-    <CatalogContext.Provider value={{ catalog, getBook, getMovie }}>
+    <CatalogContext.Provider value={{ catalog, getPair, setSearch }}>
       {children}
     </CatalogContext.Provider>
   );

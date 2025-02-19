@@ -1,7 +1,7 @@
-{
-  "movies": [
-    {
-      "id": 6,
+[
+  {
+    "id": 1,
+    "movie": {
       "title": "The Last Unicorn",
       "director": "Jules Bass, Arthur Rankin Jr.",
       "description": "A beautiful unicorn sets out to learn if she truly is the last of her kind in this sparkling animated musical.",
@@ -10,50 +10,7 @@
       "genre": ["fantasy"],
       "imageUrl": "/assets/images/the_last_unicorn_movie.jpeg"
     },
-    {
-      "id": 7,
-      "title": "Ender's Game",
-      "director": "Gavin Hood",
-      "description": "Young Ender Wiggin is recruited by the International Military to lead the fight against the Formics, an insectoid alien race who had previously tried to invade Earth and had inflicted heavy losses on humankind.",
-      "imdbRating": 6.6,
-      "yearReleased": "2013",
-      "genre": ["science-fiction"],
-      "imageUrl": "/assets/images/enders_game_movie.jpeg"
-    },
-    {
-      "id": 8,
-      "title": "The Fellowship of the Ring",
-      "director": "Peter Jackson",
-      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-      "imdbRating": 8.9,
-      "yearReleased": "2001",
-      "genre": ["fantasy"],
-      "imageUrl": "/assets/images/the_fellowship_of_the_ring_movie.jpeg"
-    },
-    {
-      "id": 9,
-      "title": "The Hunger Games",
-      "director": "Gary Ross",
-      "description": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
-      "imdbRating": 7.2,
-      "yearReleased": "2012",
-      "genre": ["Dystopian Sci-Fi"],
-      "imageUrl": "/assets/images/the_hunger_games_movie.jpeg"
-    },
-    {
-      "id": 10,
-      "title": "Twilight",
-      "director": "Catherine Hardwicke",
-      "description": "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire.",
-      "imdbRating": 5.3,
-      "yearReleased": "2008",
-      "genre": ["fantasy"],
-      "imageUrl": "/assets/images/twighlight_movie.jpeg"
-    }
-  ],
-  "books": [
-    {
-      "id": 1,
+    "book": {
       "title": "The Last Unicorn",
       "author": "Peter S. Beagle",
       "description": "The Last Unicorn is a fantasy novel by American author Peter S. Beagle and published in 1968, by Viking Press in the U.S. and The Bodley Head in the U.K. It follows the tale of a unicorn, who believes she is the last of her kind in the world and undertakes a quest to discover what has happened to the other unicorns.",
@@ -62,31 +19,64 @@
       "pageCount": "288",
       "genre": ["fantasy"],
       "imageUrl": "/assets/images/the_last_unicorn_book.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "movie": {
+      "title": "Ender's Game",
+      "director": "Gavin Hood",
+      "description": "Young Ender Wiggin is recruited by the International Military to lead the fight against the Formics, an insectoid alien race who had previously tried to invade Earth and had inflicted heavy losses on humankind.",
+      "imdbRating": 6.6,
+      "yearReleased": "2013",
+      "genre": ["science-fiction"],
+      "imageUrl": "/assets/images/enders_game_movie.jpeg"
     },
-    {
-      "id": 2,
+    "book": {
       "title": "Ender's Game",
       "author": "Orson Scott Card",
-      "description": "Ender's Game is a 1985 military science fiction novel by American author Orson Scott Card. Set at an unspecified date in Earth's future, the novel presents an imperiled humankind after two conflicts with an insectoid alien species they dub 'the buggers' ",
+      "description": "Ender's Game is a 1985 military science fiction novel by American author Orson Scott Card. Set at an unspecified date in Earth's future, the novel presents an imperiled humankind after two conflicts with an insectoid alien species they dub 'the buggers'.",
       "goodreadsRating": 4.3,
       "yearPublished": "1985",
       "pageCount": "324",
       "genre": ["science-fiction"],
       "imageUrl": "/assets/images/enders_game_book.jpeg"
+    }
+  },
+  {
+    "id": 3,
+    "movie": {
+      "title": "The Fellowship of the Ring",
+      "director": "Peter Jackson",
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "imdbRating": 8.9,
+      "yearReleased": "2001",
+      "genre": ["fantasy"],
+      "imageUrl": "/assets/images/the_fellowship_of_the_ring_movie.jpeg"
     },
-    {
-      "id": 3,
+    "book": {
       "title": "The Fellowship of the Ring",
       "author": "J.R.R. Tolkien",
-      "description": "the first of three volumes of the epic novel[1] The Lord of the Rings by the English author J. R. R. Tolkien; it is followed by The Two Towers and The Return of the King. The action takes place in the fictional universe of Middle-earth.",
+      "description": "The first of three volumes of the epic novel The Lord of the Rings by the English author J. R. R. Tolkien; it is followed by The Two Towers and The Return of the King. The action takes place in the fictional universe of Middle-earth.",
       "goodreadsRating": 4.4,
       "yearPublished": "1954",
       "pageCount": "464",
       "genre": ["fantasy"],
       "imageUrl": "/assets/images/the_fellowship_of_the_ring_book.jpeg"
+    }
+  },
+  {
+    "id": 4,
+    "movie": {
+      "title": "The Hunger Games",
+      "director": "Gary Ross",
+      "description": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+      "imdbRating": 7.2,
+      "yearReleased": "2012",
+      "genre": ["Dystopian Sci-Fi"],
+      "imageUrl": "/assets/images/the_hunger_games_movie.jpeg"
     },
-    {
-      "id": 4,
+    "book": {
       "title": "The Hunger Games",
       "author": "Suzanne Collins",
       "description": "The Hunger Games follows 16-year-old Katniss Everdeen, a girl from District 12 who volunteers for the 74th Hunger Games in place of her younger sister Primrose Everdeen.",
@@ -95,9 +85,20 @@
       "pageCount": "374",
       "genre": ["science-fiction", "dystopian", "young-adult"],
       "imageUrl": "/assets/images/the_hunger_games_book.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "movie": {
+      "title": "Twilight",
+      "director": "Catherine Hardwicke",
+      "description": "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire.",
+      "imdbRating": 5.3,
+      "yearReleased": "2008",
+      "genre": ["fantasy"],
+      "imageUrl": "/assets/images/twighlight_movie.jpeg"
     },
-    {
-      "id": 5,
+    "book": {
       "title": "Twilight",
       "author": "Stephenie Meyer",
       "description": "Twilight introduces seventeen-year-old Isabella 'Bella' Swan, who moves from Phoenix, Arizona, to Forks, Washington. She is endangered after falling in love with Edward Cullen, a 103-year-old vampire frozen in his 17-year-old body.",
@@ -107,6 +108,5 @@
       "genre": ["fantasy", "young-adult", "romance"],
       "imageUrl": "/assets/images/twilight_book.jpg"
     }
-
-  ]
-}
+  }
+]
