@@ -12,8 +12,16 @@ export default function CatalogLinkCard({
   path,
 }: ICatalogLinkCard) {
   return (
-    <Link className="border-2 hover:border-4 rounded hover:font-bold" to={path}>
-      <h2>{name}</h2>
+    <Link
+      className="w-80 rounded-lg border border-gray-300 dark:border-gray-700 p-6 bg-white dark:bg-gray-800 shadow-md transition-transform duration-200 transform hover:scale-105 flex flex-col gap-4"
+      to={path}
+    >
+      <img
+        src={`assets/images/${name}.jpg`}
+        alt={name}
+        className="h-50 w-full bg-gray-200 rounded-lg"
+      />
+      <h2 className="font-bold text-xl">{name}</h2>
       <div>{description}</div>
     </Link>
   );
