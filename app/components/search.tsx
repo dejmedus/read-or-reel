@@ -2,28 +2,31 @@ import useCatalog from "~/hooks/useCatalog";
 
 export default function Search() {
   const { setSearch } = useCatalog();
+
   return (
-    <div className="relative w-[14em]">
-      <label htmlFor="Search" className="sr-only">
-        {" "}
-        Search{" "}
-      </label>
+    <div className="flex items-center justify-end my-4">
+      <div className="relative w-[14em]">
+        <label htmlFor="Search" className="sr-only">
+          {" "}
+          Search{" "}
+        </label>
 
-      <input
-        type="text"
-        id="Search"
-        onChange={(e) => setSearch(e.target.value)}
-        placeholder="Search for..."
-        className="shadow-xs px-4 py-2 border border-gray-200 rounded-md w-full sm:text-sm"
-      />
+        <input
+          type="text"
+          id="Search"
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search for..."
+          className="shadow-xs px-4 py-2 border border-gray-200 rounded-md w-full sm:text-sm"
+        />
 
-      <span className="absolute inset-y-0 place-content-center grid w-10 end-0">
-        <button type="button" className="text-gray-600 hover:text-gray-700">
-          <span className="sr-only">Search</span>
+        <span className="absolute inset-y-0 place-content-center grid w-10 end-0">
+          <button type="button" className="text-gray-600 hover:text-gray-700">
+            <span className="sr-only">Search</span>
 
-          <SearchIcon />
-        </button>
-      </span>
+            <SearchIcon />
+          </button>
+        </span>
+      </div>
     </div>
   );
 }
