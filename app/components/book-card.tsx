@@ -11,7 +11,7 @@ export default function BookCard({
   const { title, imageUrl } = bookData;
 
   return (
-    <Link to={`/books/${bookId}`} className="block">
+    <Link to={`/pair/${bookId}`} className="block">
       <div className="shadow-lg rounded max-w-sm overflow-hidden">
         <img
           src={imageUrl}

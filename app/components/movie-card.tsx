@@ -20,7 +20,7 @@ export default function MovieCard({
   } = movieData;
 
   return (
-    <Link to={`/movies/${movieId}`} className="block">
+    <Link to={`/pair/${movieId}`} className="block">
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img
           src={imageUrl}
