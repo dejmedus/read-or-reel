@@ -47,11 +47,17 @@ export default function Catalog() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {/* map through catalog and display either book or movie */}
         {catalog.map((pair) =>
-          booksOrMovies === "books" ? (
-            <BookCard key={pair.id} bookId={pair.id} bookData={pair.book} />
-          ) : (
-            <MovieCard key={pair.id} movieId={pair.id} movieData={pair.movie} />
-          )
+          booksOrMovies === "books"
+            ? pair.book && (
+                <BookCard key={pair.id} bookId={pair.id} bookData={pair.book} />
+              )
+            : pair.movie && (
+                <MovieCard
+                  key={pair.id}
+                  movieId={pair.id}
+                  movieData={pair.movie}
+                />
+              )
         )}
       </div>
     </section>

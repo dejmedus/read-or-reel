@@ -21,14 +21,14 @@ export interface IBook {
 
 export interface IPair {
   id: number;
-  movie: IMovie;
-  book: IBook;
+  movie: IMovie | null;
+  book: IBook | null;
 }
 
 export type ICatalog = IPair[];
 
 export interface CatalogContextType {
   catalog: ICatalog;
-  getPair: (bookId: number) => IPair;
+  getPair: (id: number) => IPair;
   setSearch: (search: string) => void;
 }
