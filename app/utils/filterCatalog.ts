@@ -54,8 +54,15 @@ export default function filterCatalog(
   search: string
 ): ICatalog {
   const scores = catalog.map((pair) => {
-    const bookScore = calculateScore(pair.book.title, search);
-    const movieScore = calculateScore(pair.movie.title, search);
+    let bookScore = 0;
+    let movieScore = 0;
+    if (pair.book) {
+      bookScore = calculateScore(pair.book.title, search);
+    }
+    if (pair.movie) {
+      movieScore = calculateScore(pair.movie.title, search);
+    }
+
     const score = Math.max(bookScore, movieScore);
 
     return { pair, score };
