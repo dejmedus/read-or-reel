@@ -62,7 +62,7 @@ export default function Book() {
             </div>
           </div>
         ) : (
-          <h2>Right now, there&apos;s no film version of {movie.title}.</h2>
+          <h2>Right now, there&apos;s no book version of {movie.title}.</h2>
         )}
 
         {/* Movie */}
