@@ -1,6 +1,8 @@
 import type { LoaderFunctionArgs } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import useCatalog from "../hooks/useCatalog";
+import StarRating from "~/components/star-rating";
+
 
 export async function loader({ params }: LoaderFunctionArgs) {
   return { id: Number(params.id) };
@@ -40,9 +42,7 @@ export default function Book() {
 
   return (
     <div className="text-center pt-5">
-      {/* Title */}
-      <h1 className="text-3xl font-bold mb-2">{book.title}</h1>
-      {/* Genre displayed below the title */}
+      <h1 className="text-3xl font-bold mb-2">{book.title}</h1>     
       <p className="text-lg italic mb-5">
         Genre: {book.genre.join(", ")}
       </p>
@@ -60,7 +60,12 @@ export default function Book() {
           <p className="text-base italic mt-1">✍️ Author: {book.author}</p>
           <p className="text-base italic mt-1"> Description: {book.description}</p> 
           <p className="text-base italic mt-1">🗓️ Year: {book.yearPublished}</p>
-          <p className="text-base italic mt-1">⭐ Rating: {book.goodreadsRating}</p>
+          <div className="mt-1 flex justify-center">
+  {/* call StarRating component, pass the ratings as props to component */}
+  <StarRating rating={book.goodreadsRating} />
+</div>
+
+
         </div>
 
         {/* Movie */}
@@ -74,7 +79,12 @@ export default function Book() {
           <p className="text-base italic mt-1">🎥 Director: {movie.director}</p>
           <p className="text-base italic mt-1"> Description: {movie.description}</p>    
           <p className="text-base italic mt-1">🗓️ Year: {movie.yearReleased}</p>
-          <p className="text-base italic mt-1">⭐ Rating: {movie.imdbRating}</p>
+          <div className="mt-1 flex justify-center">
+  {/* call StarRating component, use IMDB boolean to trigger normalizing rating */}
+  <StarRating rating={movie.imdbRating} isIMDB={true} />
+</div>
+
+
         </div>
       </div>
     </div>
