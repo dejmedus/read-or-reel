@@ -108,5 +108,208 @@
       "genre": ["fantasy", "young-adult", "romance"],
       "imageUrl": "/assets/images/twilight_book.jpg"
     }
+  },
+  {
+    "id": 6,
+    "movie": {
+      "title": "Jurassic Park",
+      "director": "Steven Spielberg",
+      "description": "A wealthy entrepreneur creates a theme park featuring genetically engineered dinosaurs, but the park's security system fails and the creatures escape.",
+      "imdbRating": 8.1,
+      "yearReleased": "1993",
+      "genre": ["adventure", "science-fiction"],
+      "imageUrl": "/assets/images/jurassic_park_movie.jpeg"
+    },
+    "book": {
+      "title": "Jurassic Park",
+      "author": "Michael Crichton",
+      "description": "A scientist creates a genetically-engineered island with living dinosaurs, but the creatures break free and chaos ensues.",
+      "goodreadsRating": 4.2,
+      "yearPublished": "1990",
+      "pageCount": "448",
+      "genre": ["science-fiction", "thriller"],
+      "imageUrl": "/assets/images/jurassic_park_book.jpeg"
+    }
+  },
+  {
+    "id": 7,
+    "movie": {
+      "title": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an extraordinary life story.",
+      "imdbRating": 8.8,
+      "yearReleased": "1994",
+      "genre": ["drama", "comedy"],
+      "imageUrl": "/assets/images/forrest_gump_movie.jpeg"
+    },
+    "book": {
+      "title": "Forrest Gump",
+      "author": "Winston Groom",
+      "description": "The life of Forrest Gump, a slow-witted but kind-hearted man who unwittingly influences major events in U.S. history.",
+      "goodreadsRating": 4.0,
+      "yearPublished": "1986",
+      "pageCount": "448",
+      "genre": ["fiction", "drama"],
+      "imageUrl": "/assets/images/forrest_gump_book.jpeg"
+    }
+  },
+  {
+    "id": 8,
+    "movie": {
+      "title": "The Great Gatsby",
+      "director": "Baz Luhrmann",
+      "description": "A young man’s obsession with a beautiful woman leads to a tragic unraveling of his life as he seeks wealth, love, and status in 1920s New York.",
+      "imdbRating": 7.2,
+      "yearReleased": "2013",
+      "genre": ["drama", "romance"],
+      "imageUrl": "/assets/images/the_great_gatsby_movie.jpeg"
+    },
+    "book": {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "The story of the enigmatic Jay Gatsby, his unrequited love for Daisy Buchanan, and the tragic consequences of the American dream.",
+      "goodreadsRating": 3.9,
+      "yearPublished": "1925",
+      "pageCount": "218",
+      "genre": ["classics", "fiction"],
+      "imageUrl": "/assets/images/the_great_gatsby_book.jpeg"
+    }
+  },
+  {
+    "id": 9,
+    "movie": {
+      "title": "The Shining",
+      "director": "Stanley Kubrick",
+      "description": "A man takes a job as a winter caretaker of a remote hotel, only to slowly unravel into madness due to the supernatural forces within.",
+      "imdbRating": 8.4,
+      "yearReleased": "1980",
+      "genre": ["horror", "thriller"],
+      "imageUrl": "/assets/images/the_shining_movie.jpeg"
+    },
+    "book": {
+      "title": "The Shining",
+      "author": "Stephen King",
+      "description": "A man, his wife, and his son take refuge in a remote hotel during the winter, only to face terrifying supernatural forces that test their sanity.",
+      "goodreadsRating": 4.2,
+      "yearPublished": "1977",
+      "pageCount": "688",
+      "genre": ["horror", "thriller"],
+      "imageUrl": "/assets/images/the_shining_book.jpeg"
+    }
+  },
+  {
+    "id": 10,
+    "movie": {
+      "title": "The Social Network",
+      "director": "David Fincher",
+      "description": "The story of the founding of Facebook, examining the conflict and betrayal between its founders and the legal battles that followed.",
+      "imdbRating": 8.0,
+      "yearReleased": "2010",
+      "genre": ["drama", "biography"],
+      "imageUrl": "/assets/images/the_social_network_movie.jpeg"
+    },
+    "book": {
+      "title": "The Accidental Billionaires",
+      "author": "Ben Mezrich",
+      "description": "The true story of the creation of Facebook, chronicling the rise of Mark Zuckerberg and the disputes over the social network’s ownership.",
+      "goodreadsRating": 3.8,
+      "yearPublished": "2009",
+      "pageCount": "272",
+      "genre": ["non-fiction", "biography"],
+      "imageUrl": "/assets/images/the_accidental_billionaires_book.jpeg"
+    }
+  },
+  {
+    "id": 11,
+    "movie": {
+      "title": "To Kill a Mockingbird",
+      "director": "Robert Mulligan",
+      "description": "A lawyer defends a black man accused of a crime he didn't commit, as seen through the eyes of his young daughter, in a racially divided town in the 1930s.",
+      "imdbRating": 8.3,
+      "yearReleased": "1962",
+      "genre": ["Drama"],
+      "imageUrl": "/assets/images/to_kill_a_mockingbird_movie.jpeg"
+    },
+    "book": {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A story of racial injustice and moral growth in the American South, narrated by young Scout Finch as her father, Atticus, defends a black man in a prejudiced society.",
+      "goodreadsRating": 4.3,
+      "yearPublished": "1960",
+      "pageCount": "281",
+      "genre": ["classic", "historical-fiction", "coming-of-age"],
+      "imageUrl": "/assets/images/to_kill_a_mockingbird_book.jpeg"
+    }
+  },
+  {
+    "id": 12,
+    "movie": {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "director": "Chris Columbus",
+      "description": "An orphaned boy named Harry Potter discovers he is a wizard on his 11th birthday and attends Hogwarts School of Witchcraft and Wizardry, where he learns the truth about his past.",
+      "imdbRating": 7.6,
+      "yearReleased": "2001",
+      "genre": ["Fantasy"],
+      "imageUrl": "/assets/images/harry_potter_movie.jpg"
+    },
+    "book": {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "description": "Harry Potter, a young wizard, discovers his magical heritage and begins his journey at Hogwarts, uncovering secrets about his past and facing the dark forces that threaten the wizarding world.",
+      "goodreadsRating": 4.5,
+      "yearPublished": "1997",
+      "pageCount": "309",
+      "genre": ["fantasy", "young-adult", "magic"],
+      "imageUrl": "/assets/images/harry_potter_book.jpg"
+    }
+  },
+  {
+    "id": 13,
+    "movie": {
+      "title": "The Maze Runner",
+      "director": "Wes Ball",
+      "description": "Thomas wakes up with no memory in a giant maze and must work with others to find an escape while uncovering the secrets behind their captivity.",
+      "imdbRating": 6.8,
+      "yearReleased": "2014",
+      "genre": ["Dystopian Sci-Fi", "Action"],
+      "imageUrl": "/assets/images/the_maze_runner_movie.jpg"
+    },
+    "book": {
+      "title": "The Maze Runner",
+      "author": "James Dashner",
+      "description": "Thomas finds himself in the Glade, a mysterious environment surrounded by a vast maze. With no memories of his past, he must work with fellow Gladers to escape before it's too late.",
+      "goodreadsRating": 4.0,
+      "yearPublished": "2009",
+      "pageCount": "375",
+      "genre": ["science-fiction", "dystopian", "young-adult"],
+      "imageUrl": "/assets/images/the_maze_runner_book.jpg"
+    }
+  },
+  {
+    "id": 14,
+    "movie": {
+      "title": "Little Women",
+      "director": "Greta Gerwig",
+      "description": "Jo March reflects back and forth on her life, telling the beloved story of the March sisters - four young women, each determined to live life on her own terms.",
+      "imdbRating": 7.8,
+      "yearReleased": "2019",
+      "genre": ["Drama", "Romance"],
+      "imageUrl": "/assets/images/little_women_movie.jpeg"
+    },
+    "book": null
+  },
+  {
+    "id": 15,
+    "movie": null,
+    "book": {
+      "title": "Divergent",
+      "author": "Veronica Roth",
+      "description": "In a society where people are divided into factions, 16-year-old Tris Prior makes a choice that changes her life forever, uncovering secrets that threaten to tear her world apart.",
+      "goodreadsRating": 4.2,
+      "yearPublished": "2011",
+      "pageCount": "487",
+      "genre": ["science-fiction", "dystopian", "young-adult"],
+      "imageUrl": "/assets/images/divergent_book.jpg"
+    }
   }
 ]
