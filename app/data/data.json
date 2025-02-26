@@ -287,29 +287,29 @@
   },
   {
     "id": 14,
-    "movie": {
-      "title": "Little Women",
-      "director": "Greta Gerwig",
-      "description": "Jo March reflects back and forth on her life, telling the beloved story of the March sisters - four young women, each determined to live life on her own terms.",
-      "imdbRating": 7.8,
-      "yearReleased": "2019",
-      "genre": ["Drama", "Romance"],
-      "imageUrl": "/assets/images/little_women_movie.jpeg"
+    "book": {
+      "title": "Where the Sidewalk Ends",
+      "director": "Shel Silverstein",
+      "description": "You'll meet a boy who turns into a TV set, and a girl who eats a whale. The Unicorn and the Bloath live there, and so does Sarah Cynthia Sylvia Stout who will not take the garbage out. It is a place where you wash your shadow and plant diamond gardens, a place where shoes fly, sisters are auctioned off, and crocodiles go to the dentist..",
+      "goodreadsRating": 4.3,
+      "yearPublished": "1974",
+      "pageCount": "192",
+      "genre": ["Children", "Poem"],
+      "imageUrl": "/assets/images/where_the_sidewalk_ends.jpeg"
     },
-    "book": null
+    "movie": null
   },
   {
     "id": 15,
-    "movie": null,
-    "book": {
-      "title": "Divergent",
-      "author": "Veronica Roth",
-      "description": "In a society where people are divided into factions, 16-year-old Tris Prior makes a choice that changes her life forever, uncovering secrets that threaten to tear her world apart.",
-      "goodreadsRating": 4.2,
-      "yearPublished": "2011",
-      "pageCount": "487",
-      "genre": ["science-fiction", "dystopian", "young-adult"],
-      "imageUrl": "/assets/images/divergent_book.jpg"
+    "book": null,
+    "movie": {
+      "title": "Pulp Fiction",
+      "director": "Quentin Tarantino",
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "imdbRating": 8.9,
+      "yearReleased": "1994",
+      "genre": ["Comedy", "Crime"],
+      "imageUrl": "/assets/images/pulp_fiction.jpg"
     }
   }
 ]
