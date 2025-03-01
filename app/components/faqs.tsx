@@ -4,12 +4,12 @@ export default function FAQs() {
       <h2 className="text-3xl font-bold text-center">FAQs</h2>
       <div className="space-y-4">
         <FAQ
-          question="What is Reel or Read?"
+          question="What is Read or Reel?"
           answer="A platform that helps users compare books and their movie adaptations."
         />
         <FAQ
           question="Who is this platform for?"
-          answer="Reel or Read is designed for book club organizers, teachers, content creators, and anyone who wants to analyze book-to-movie adaptations efficiently."
+          answer="Read or Reel is designed for book club organizers, teachers, content creators, and anyone who wants to analyze book-to-movie adaptations efficiently."
         />
         <FAQ
           question="Is there a premium version?"

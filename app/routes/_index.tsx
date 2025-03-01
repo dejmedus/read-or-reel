@@ -7,10 +7,10 @@ export default function Index() {
       {/* Hero Section */}
       <section className="hero text-center flex flex-col gap-4">
         <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white">
-          Reel or Reed
+          Read or Reel
         </h1>
         <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
-          Discover amazing books and movies curated for you.
+          Compare book and movie adaptations
         </p>
       </section>
 
@@ -21,12 +21,12 @@ export default function Index() {
           <CatalogLinkCard
             name="Movies"
             path="/catalog?type=movies"
-            description="Dive into an exciting selection of movies curated for you."
+            description="Discover cinematic adaptations and timeless classics"
           />
           <CatalogLinkCard
             name="Books"
             path="/catalog?type=books"
-            description="Explore a vast collection of books across various genres."
+            description="Uncover the stories behind the films and literary greats"
           />
         </div>
       </section>
