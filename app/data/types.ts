@@ -30,5 +30,6 @@ export type ICatalog = IPair[];
 export interface CatalogContextType {
   catalog: ICatalog;
   getPair: (id: number) => IPair;
+  search: string;
   setSearch: (search: string) => void;
 }

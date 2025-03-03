@@ -12,7 +12,7 @@ export default function Navbar() {
         mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8"
       >
         <h1 className="text-lg font-semibold">
-          <Link to="/"> Reed or Reel</Link>
+          <Link to="/"> Read or Reel</Link>
         </h1>
 
         <div className="hidden sm:block">

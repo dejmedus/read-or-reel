@@ -1,7 +1,7 @@
 import useCatalog from "~/hooks/useCatalog";
 
 export default function Search() {
-  const { setSearch } = useCatalog();
+  const { search, setSearch } = useCatalog();
 
   return (
     <div className="flex items-center justify-end my-4">
@@ -15,6 +15,7 @@ export default function Search() {
           type="text"
           id="Search"
           onChange={(e) => setSearch(e.target.value)}
+          value={search}
           placeholder="Search for..."
           className="shadow-xs px-4 py-2 border border-gray-200 rounded-md w-full sm:text-sm"
         />

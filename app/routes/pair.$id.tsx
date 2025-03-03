@@ -49,9 +49,7 @@ export default function Book() {
             <p className="text-lg font-semibold mt-2">📖 Book</p>
             <p className="text-base italic mt-1">✍️ Author: {book.author}</p>
             <p className="text-base italic mt-1 flex justify-center">
-              <span className=" max-w-[700px]">
-                Description: {book.description}
-              </span>
+              <span className=" max-w-[700px]">{book.description}</span>
             </p>
             <p className="text-base italic mt-1">
               🗓️ Year: {book.yearPublished}
@@ -78,9 +76,7 @@ export default function Book() {
               🎥 Director: {movie.director}
             </p>
             <p className="text-base italic mt-1 flex justify-center">
-              <span className=" max-w-[700px]">
-                Description: {movie.description}
-              </span>
+              <span className=" max-w-[700px]">{movie.description}</span>
             </p>
             <p className="text-base italic mt-1">
               🗓️ Year: {movie.yearReleased}
